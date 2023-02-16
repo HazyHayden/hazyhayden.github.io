@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Hayden's workout routine customized to be updated regularly"> <!--What the Site is-->
+    <meta name="author" content="Hayden Keppel"> <!--Your Name-->
+    <meta property="og:image" content="assets/favicon.png" />
+    <link rel="shortcut icon" href="assets/favicon.png" type="image/x-icon">
+    <title>Hay-K Fitness</title> <!--Title of page (First half then second half) (Tab name)-->
+    <link rel="stylesheet" type="text/css" href="css/style.css" /> <!--Stylesheet Link-->
+    <script src="https://kit.fontawesome.com/a4f3d1faa5.js" crossorigin="anonymous"></script>
+</head>
+<body onload="onLoad()">
+    <div class="loader">
+        <div class="loader__ball loader__ball1"></div>
+        <div class="loader__ball loader__ball2"></div>
+        <div class="loader__ball loader__ball3"></div>
+    </div>
+    <header class="header">
+        <h1 class="header__title">
+            Hay-K Fitness
+        </h1>
+        <div class="header__bg"></div>
+    </header>
+    <nav class="nav">
+        <li class="nav__logo"><a href="index.html" class="nav__logo__link" tabindex="1">
+            <!--Hay-K Logo SVG-->
+            <!--Edit the width property below to adjust the size-->
+            <svg width="100" viewBox="0 0 100 35" id="logo-viewbox">
+                <g id="logo-text">
+                    <path d="M2 27.4648L9.125 8.9375H11.0703L3.95703 27.4648H2ZM11.6562 27.4648L18.7812 8.9375H20.7266L13.6133 27.4648H11.6562ZM32.7266 26V24.5234L34.6367 24.1953V18.4648H26.4805V24.1953L28.3906 24.5234V26H22.2617V24.5234L24.1719 24.1953V10.7539L22.2617 10.4258V8.9375H28.3906V10.4258L26.4805 10.7539V16.6484H34.6367V10.7539L32.7266 10.4258V8.9375H38.8555V10.4258L36.9453 10.7539V24.1953L38.8555 24.5234V26H32.7266ZM44.7734 26.2461C43.4531 26.2461 42.4492 25.9258 41.7617 25.2852C41.0742 24.6367 40.7305 23.7266 40.7305 22.5547C40.7305 21.7422 40.9531 21.0391 41.3984 20.4453C41.8359 19.8438 42.4727 19.3789 43.3086 19.0508C44.1445 18.7227 45.1445 18.5586 46.3086 18.5586H48.5703V17.3164C48.5703 16.5508 48.3359 15.957 47.8672 15.5352C47.4062 15.1133 46.7539 14.9023 45.9102 14.9023C45.3789 14.9023 44.918 14.9688 44.5273 15.1016C44.1367 15.2266 43.7812 15.4023 43.4609 15.6289L43.2148 17.3984H41.4336V14.4922C42.582 13.5547 44.0859 13.0859 45.9453 13.0859C47.4844 13.0859 48.6914 13.4531 49.5664 14.1875C50.4414 14.9219 50.8789 15.9727 50.8789 17.3398V23.4453C50.8789 23.6094 50.8789 23.7695 50.8789 23.9258C50.8867 24.082 50.8984 24.2383 50.9141 24.3945L52.1445 24.5234V26H48.8281C48.6953 25.3594 48.6133 24.7773 48.582 24.2539C48.1367 24.8242 47.5781 25.3008 46.9062 25.6836C46.2422 26.0586 45.5312 26.2461 44.7734 26.2461ZM45.1133 24.3125C45.8789 24.3125 46.5781 24.1289 47.2109 23.7617C47.8438 23.3945 48.2969 22.9531 48.5703 22.4375V20.1406H46.2266C45.1641 20.1406 44.3672 20.3945 43.8359 20.9023C43.3047 21.4102 43.0391 21.9766 43.0391 22.6016C43.0391 23.7422 43.7305 24.3125 45.1133 24.3125ZM56.1992 31.1211C56.0195 31.1211 55.7852 31.0977 55.4961 31.0508C55.207 31.0117 54.9844 30.9727 54.8281 30.9336L55.0625 29.1172C55.1953 29.1328 55.3789 29.1445 55.6133 29.1523C55.8477 29.168 56.0078 29.1758 56.0938 29.1758C56.5859 29.1758 56.9844 28.9883 57.2891 28.6133C57.6016 28.2383 57.8906 27.7266 58.1562 27.0781L58.707 25.7422L54.2188 14.9961L52.8594 14.8086V13.3203H58.1797V14.8086L56.6445 15.043L59.1172 21.3828L59.7148 23.0352H59.7852L62.7148 15.043L61.0977 14.8086V13.3203H66.3125V14.8086L65 14.9961L60.0078 27.9453C59.7734 28.5625 59.4922 29.1094 59.1641 29.5859C58.8281 30.0625 58.418 30.4375 57.9336 30.7109C57.457 30.9844 56.8789 31.1211 56.1992 31.1211ZM68.3516 19.6953V17.8906H74.082V19.6953H68.3516ZM87.8164 10.5898L86.5391 10.4258V8.9375H92.0117V10.4258L90.4062 10.7188L85.1914 16.3906L91.0508 24.2305L92.6211 24.5234V26H86.9258V24.5234L88.332 24.3594L88.3203 24.3477L83.7383 17.9844L81.0664 20.8906V24.1953L82.9766 24.5234V26H76.8477V24.5234L78.7578 24.1953V10.7539L76.8477 10.4258V8.9375H82.9766V10.4258L81.0664 10.7539V18.0898L87.7695 10.6484L87.8164 10.5898Z"/>
+                </g> <!--#logo-text-->
+                <rect x="95" y="2.5" width="1" height="30" id="logo-cursor"/>
+            </svg> <!--#logo-viewbox-->
+        </a></li>
+        <input type="checkbox" id="menu-btn" style="display: none;">
+        <ul class="nav__group" id="navGroup">
+            <li class="nav__li"><a href="index.html" class="nav__links" tabindex="3">Home</a></li>
+            <li class="nav__li"><a href="#Day1" class="nav__links" tabindex="4">Chest&Back</a></li>
+            <li class="nav__li"><a href="#Day2" class="nav__links" tabindex="5">Arms</a></li>
+            <li class="nav__li"><a href="#Day3" class="nav__links" tabindex="6">Legs</a></li>
+        </ul>
+        <button id="hamburger-btn" class="nav__hamburger" onclick="navExpand()" tabindex="2">
+            <svg width="30" viewBox="0 0 100 100" fill="none" id="hamburger-icon">
+                <rect class="line top-line" width="80" height="10" x="10" y="20" rx="5"></rect>
+                <rect class="line mid-line" width="80" height="10" x="10" y="45" rx="5"></rect>
+                <rect class="line bottom-line" width="80" height="10" x="10" y="70" rx="5"></rect>
+            </svg>
+            <style>
+                /*---------- Hamburger Animations -----------*/
+                /* Closing Transition */
+                .line {
+                    fill: hsl(var(--clr-light));
+                    transform-origin: center;
+                    transition: 
+                    transform .3s ease-in,
+                    y .3s ease-in .3s,
+                    opacity 0ms ease-in .3s;
+                }
+            
+                /* Opening Transition */
+                .nav__hamburger__expanded .line {
+                    transition: 
+                    transform .3s ease-in .3s,
+                    y .3s ease-in,
+                    opacity 0ms ease-in .3s;
+                }
+            
+                .nav__hamburger__expanded :is(.top-line, .bottom-line){y: 45;}
+                .nav__hamburger__expanded .top-line{transform: rotate(45deg)}
+                .nav__hamburger__expanded .bottom-line{transform: rotate(-45deg);}
+                .nav__hamburger__expanded .mid-line{opacity: 0;}
+                /* ----------------------------------------- */
+                #navGroup__expanded {
+                    display: block;
+                }
+            </style>
+        </button>
+    </nav>
+    <main id="main">
+        <div class="day day1" id="Day1">
+            <h2 class="day__title section-title" id="Day1__title"></h2>
+            <!-- CONTENT -->
+
+        </div> <!--.day1-->
+        <div class="day day2" id="Day2">
+            <h2 class="day__title section-title" id="Day2__title"></h2>
+            <!-- CONTENT -->
+
+        </div> <!--.day2-->
+        <div class="day day3" id="Day3">
+            <h2 class="day__title section-title" id="Day3__title"></h2>
+            <!-- CONTENT -->
+
+        </div>
+    </main>
+    <footer>
+        <span>© Hayden - 2023 | <a href="mailto:hjk.keppel@gmail.com" target="_blank">hjk.keppel@gmail.com</a></span><br>
+            <span>Content on this site is licensed by
+                <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/legalcode" target="_blank">
+                    NC-SA CC 4.0 License.
+                </a></span><br>
+            <span>Feel free to Contact me on my Socials :)</span>
+            <div class="socials">
+                <a target="_blank" href="https://www.instagram.com/hayden.keppel/"><i class="fa-brands fa-instagram" aria-label="Link to my Instagram"></i></a>
+                <a target="_blank" href="https://www.tiktok.com/@haydenkeppel"><i class="fa-brands fa-tiktok" aria-label="Link to my Tiktok"></i></a>
+                <a target="_blank" href="https://www.snapchat.com/add/hayden.keps?share_id=_EqVvTbftKY&locale=en-NZ"><i class="fa-brands fa-snapchat" aria-label="Link to my Snapchat"></i></a>
+            </div>
+    </footer>
+</body>
+<script src="app.js"></script>
+</html>

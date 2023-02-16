@@ -1,0 +1,227 @@
+{
+    "Day1": {
+        "name": "Chest and Back",
+        "1": {
+            "name": "Single arm Lat Pulldown",
+            "info": "To do this exercise, go to the cable machine and attach a single hand grip or D-Handle. Set the cable at head height (or just above) and take a big step back. Kneel on one knee, and with the hand thats on the same side, pull the cable down to where your elbow is at your side. You can also do a slight turn away from the cable machine as you pull down to feel it more in your lats. Make sure to feel the stretch at the end of each rep.  ",
+            "sets": "3",
+            "reps": "8-12",
+            "weight": "22.5kg",
+            "dropset": false
+        },
+        "2": {
+            "name": "Flat Dumbbell Press",
+            "info": "To do this exercise, find a flat bench and 2 dumbbells. Lie flat on your back and press the dumbbells up. Keep your elbows at a 45 degree angle from your torso when lowering the weight back down.",
+            "sets": "3",
+            "reps": "8-12",
+            "weight": "16kg",
+            "dropset": false
+        },
+        "3": {
+            "name": "Close Grip Seated Cable Row",
+            "info": "To do this exercise, go to your cable row machine and attach a close, neutral-grip handle. Sit with your feet planted on the pads and your back upright. Pull the handles towards your abdomin and squeeze your shoulderblades together at the back. Slowly move the weight back forward while releasing your shoulderblades and feeling that stretch in your upper/mid back.",
+            "sets": "3",
+            "reps": "8-10",
+            "weight": "45kg",
+            "dropset": false
+        },
+        "4": {
+            "name": "Incline Dumbbell Press",
+            "info": "To do this exercise, use 2 dumbbells and set your bench to about 15 degrees. Lie on the bench with your back flat on the bench. Press the weight up. Keep your elbows at a 45 degree angle from your torso when lowering the weight back down.",
+            "sets": "3",
+            "reps": "8-12",
+            "weight": "12kg",
+            "dropset": false
+        },
+        "5": {
+            "name": "Dumbbell Row",
+            "info": "To do this exercise, go to a flatbench with a dumbbell and plant your hand on the bench so your arm is perpendicular to the bench. Put your knee on the bench so your back is straight and parallel with the foor. Grab your dumbbell with the opposite hand and pull your elbow towards the ceiling. Squeeze your shoulderblade to feel the full contraction. Slowly lower the weight back down and repeat the movement.",
+            "sets": "3",
+            "reps": "8-12",
+            "weight": "18kg",
+            "dropset": false
+        },
+        "6": {
+            "name": "Pec Fly",
+            "info": "To do this exercise, go to your Pec-Fly machine and follow the instructions. Feel the stretch at the low",
+            "sets": "3",
+            "reps": "8-12",
+            "weight": "45kg",
+            "dropset": true
+        },
+        "7": {
+            "name": "Rear Delt Fly",
+            "info": "To do this exercise, go to the Pec Deck / Pec Fly machine and move the arms to the furthest back notch. Sit on the seat facing the back rest and grab the horizontal handles. Push the handles away from the middle all the way to parallel with your body. Slowly let the weight back to it\"s resting place. Repeat for reps",
+            "sets": "3",
+            "reps": "10-12",
+            "weight": "25kg",
+            "dropset": true
+        },
+        "8": {
+            "name": "Shrugs",
+            "info": "To do this exercise, grab two heavy dumbbells, one for each hand. Lean very slightly forward and shrug your shoulders up to your ears. This ",
+            "sets": "3",
+            "reps": "12-15",
+            "weight": "22kg",
+            "dropset": false
+        },
+        "9": {
+            "name": "Dips",
+            "info": "To do this exercise, go to the parallel bars and dip your body with a slight lean forward, to where your upper arms are parallel to the bars. Push yourself up to where your arms are straight at the end of the movement",
+            "sets": "2",
+            "reps": "8-12",
+            "weight": "my bodyweight or assisted",
+            "dropset": false
+        }
+    },
+    "Day2": {
+        "name": "Arms",
+        "1": {
+            "name": "Skull Crushers",
+            "info": "Find a flat bench and an EZ-Curl bar. Lie flat on your back with your head just off the end of the bench. Start with your arms extended towards the roof with the weight resting on your hands. Lower the bar to where your hands are on/close to the top of your head, or to where you feel a stretch in your triceps. Extend your arms back out while keeping your elbows in a fixed position",
+            "sets": "3",
+            "reps": "8-12",
+            "weight": "15kg",
+            "dropset": true
+        },
+        "2": {
+            "name": "Straight Bar Bicep Curls",
+            "info": "Get a barbell/straight bar and grip the under-side with your hands slightly further than shoulder width apart. Curl the weight up to your chest and slowly lower it back down. Don\"t use momentum to bring the weight up unless you are struggling your last rep; lower your final rep down as slow as possible.",
+            "sets": "3",
+            "reps": "10-12",
+            "weight": "20kg",
+            "dropset": false
+        },
+        "3": {
+            "name": "Dumbbell Lateral Raise",
+            "info": "Grab a dumbbell for each hand and with a mostly straight arm, lift the weight about 30-45 degrees away from your body. Using a little bit of momentum is fine for the final few reps and control the eccentric.",
+            "sets": "3",
+            "reps": "8-12",
+            "weight": "9kg",
+            "dropset": false
+        },
+        "4": {
+            "name": "Single Arm Tricep Pulldown",
+            "info": "Go to the cable machine and attach the rope attachment. Pull the rope all the way through so its just on one side. Move the cable up to over head height and take a step back. Lean slightly towards the machine and grip the end of the rope with one hand. With a mostly fixed elbow position, pull the rope back to behind your body. Control it on the way back.",
+            "sets": "3",
+            "reps": "8-12",
+            "weight": "7.5kg",
+            "dropset": true
+        },
+        "5": {
+            "name": "Overhead Press / Shoulder Press",
+            "info": "Sit on a bench with an angle of about 75 degrees. With a dumbbell in each hand, press the weight over your head. Lower the weight back down to just above your shoulders to get a slight stretch in your triceps.",
+            "sets": "3",
+            "reps": "10-12",
+            "weight": "8kg",
+            "dropset": false
+        },
+        "6": {
+            "name": "Hammer Curls",
+            "info": "With a dumbbell in either hand. Curl the weight one at a time with a neutral grip (your palm facing the wall).",
+            "sets": "3",
+            "reps": "10-12",
+            "weight": "9kg",
+            "dropset": false
+        },
+        "7": {
+            "name": "Tricep Pushdown",
+            "info": "Go to a cable machine and put the cable as high as possible. With a straight bar attachment and a fixed elbow position, push the bar down and squeeze at the bottom.",
+            "sets": "3",
+            "reps": "10-12",
+            "weight": "20kg - 15kg",
+            "dropset": true
+        },
+        "8": {
+            "name": "Cable Lateral Raises",
+            "info": "Go to the cable machine with the cable at about your hip height. Attach a handle or D-Handle attachment. Take a step away from the machine so your side is facing the machine. Grab the handle with the opposite hand and raise it at a 30-45 degree angle away from your body. Make sure to do both sides. Go to failure on every set, partial reps are also good for growth.",
+            "sets": "3",
+            "reps": "8-12",
+            "weight": "7.5kg",
+            "dropset": true
+        },
+        "9": {
+            "name": "Overhand Curls / Reverse Curls",
+            "info": "Using an EZ-Curl bar, curl the weight up with your palms facing the floor",
+            "sets": "3",
+            "reps": "8-12",
+            "weight": "15kg",
+            "dropset": true
+        },
+        "10": {
+            "name": "Behind the back Wrist Curls",
+            "info": "Using a straight bar, curl the weight up using only your wrists with your palms facing up, You should feel this in your forearms. You can finish off this exercise with a hold at the top of the movement to really make your forearms burn.",
+            "sets": "3",
+            "reps": "8-12",
+            "weight": "25kg",
+            "dropset": false
+        }
+    },
+    "Day3": {
+        "name": "Legs",
+        "1": {
+            "name": "Back Squat",
+            "info": "Go to a squat rack and load up the barbell. Unrack the barbell with it resting on your upper traps. Take a step back with your feet slightly further than shoulder-width apart and your feet pointing slightly outward. Squat down to parallel or below parallel before pushing yourself back up again. Keep your heels planted firmly on the floor throughout the whole movement and push through your heels back up to the top.",
+            "sets": "3",
+            "reps": "8-12",
+            "weight": "50kg",
+            "dropset": false
+        },
+        "2": {
+            "name": "Romanian Deadlift",
+            "info": "Using a dumbbell in each hand, lean forward and push your ass outward behind you. Keep your back straight and your lower leg should be almost vertical, if not leaning slightly backwards. You should feel a deep stretch in your hamstrings before straightening your body back out again.",
+            "sets": "3",
+            "reps": "8-12",
+            "weight": "16kg",
+            "dropset": false
+        },
+        "3": {
+            "name": "Hip Thrust / Glute Drive",
+            "info": "Load up the Hip Thrust machine and buckle yourself in. With your feet shoulder-width apart, drive your pelvis into the sky, squeezing your glutes at the top of the movement. Slowly lower the weight back down and repeat.",
+            "sets": "3",
+            "reps": "10-12",
+            "weight": "70kg",
+            "dropset": false
+        },
+        "4": {
+            "name": "Adductor",
+            "info": "Go to your gyms adductor/abductor machine and squeeze your legs together? It\"s pretty simple, I don\"t think I need to explain it. This makes your legs look wider from the front.",
+            "sets": "3",
+            "reps": "10-12",
+            "weight": "70kg",
+            "dropset": true
+        },
+        "5": {
+            "name": "Abductor",
+            "info": "Go to your gyms adductor/abductor machine and push your legs apart. You should feel this in your glutes.",
+            "sets": "3",
+            "reps": "10-12",
+            "weight": "65kg",
+            "dropset": true
+        },
+        "6": {
+            "name": "Leg Extensions",
+            "info": "On the leg extension machine, align your knee joint with the machines axis; your knee should bend where the machine bends. Kick your legs out infront of you and squeeze your quads at the top of the movement. Slowly lower the weight down. This exercise is a killer but push through the pain until you finish your set.",
+            "sets": "3",
+            "reps": "8-12",
+            "weight": "65kg",
+            "dropset": true
+        },
+        "7": {
+            "name": "Leg Curl",
+            "info": "Similar to the leg extension, line up your knee with the machines rotational axis for the best comfort. Adjust the foot pad as high as it will go and sit in the chair. Push down on the knee brace when curling your legs back for the most stability.",
+            "sets": "3",
+            "reps": "8-12",
+            "weight": "55kg",
+            "dropset": true
+        },
+        "8": {
+            "name": "Seated Calf Raises",
+            "info": "Go to a calf raise machine and put on a reasonably light weight. Unrack the weight and control the weight all the way down. Feel the stretch in your calves, and without using any momentum push the weight all the way up to feel the squeeze in your calves. Repeat in a controlled manner.",
+            "sets": "3",
+            "reps": "12-20",
+            "weight": "40kg",
+            "dropset": true
+        }
+    }
+} 

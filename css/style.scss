@@ -1,0 +1,286 @@
+@import url('https://fonts.googleapis.com/css2?family=Bakbak+One&display=swap');
+
+:root {
+    --hue: 180;
+    --saturation: 100%;
+    --lightness: 30%;
+    --clr-main: var(--hue) var(--saturation) var(--lightness);
+    --clr-complementary: calc(var(--hue) + 20) var(--saturation) var(--lightness);
+    --clr-contrast: calc(var(--hue) + 180) var(--saturation) var(--lightness);
+    --clr-light: 0 0% 90%;
+    --clr-dark: 0 0% 10%;
+}
+$transitionSpeed: 300ms;
+$breakpoint: 920px;
+
+*, *::before, *::after {
+    box-sizing: border-box;
+    // outline: 2px solid red;
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    position: relative;
+    background: hsl(var(--clr-light));
+    color: hsl(var(--clr-dark));
+    width: 100%;
+    font-family: sans-serif;
+    scroll-behavior: smooth;
+    scroll-padding: 3.5rem;
+}
+
+/*=============
+ Header Styling
+=============*/
+.header {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    min-height: 15em;
+    border-bottom: 5px solid hsl(var(--clr-dark));
+
+    &__title {
+        font-size: clamp(2rem, 10vw, 4rem);
+        font-family: 'Bakbak One';
+        text-transform: uppercase;
+        text-shadow: 
+            3px 3px hsl(var(--clr-main)),
+            -3px 3px hsl(var(--clr-main)),
+            -3px -3px hsl(var(--clr-main)),
+            3px -3px hsl(var(--clr-main));
+    }
+
+    &__bg {
+        position: absolute;
+        inset: 0;
+        background: url(../assets/barbell-bg.jpeg);
+        background-position: 50% 70%;
+        background-repeat: no-repeat;
+        background-size: cover;
+        z-index: -1;
+        filter: blur(5px);
+    }
+}
+
+/*=================
+ Navigation Styling
+=================*/
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    background: hsl(var(--clr-main));
+    padding: .5em 2em;
+    box-shadow: 3px 3px 3px 0px hsl(var(--clr-dark) / .2);
+    z-index: 255;
+
+    ul, li {
+        list-style: none;
+    }
+
+    &__group {
+        display: flex;
+        gap: 1.5em;
+    }
+
+    &__li {
+        display: block;
+    }
+
+    &__links {
+        display: inline-block;
+        color: hsl(var(--clr-light));
+        text-decoration: none;
+        font-size: 1.1rem;
+        padding: .5em .75em;
+
+        background: linear-gradient(hsl(var(--clr-light)), hsl(var(--clr-light)));
+        background-repeat: no-repeat;
+        background-position: bottom left;
+        background-size: 0% 3px;
+        transition:
+            background-size $transitionSpeed ease,
+            transform $transitionSpeed ease;
+        
+        @media(width > $breakpoint) {
+            &:is(:hover, :focus) {
+                background-size: 100% 3px;
+            }
+        }
+    }
+
+    &__hamburger {
+        display: none;
+        background: transparent;
+        border: transparent;
+    }
+
+    /*--Responsive Navigation--*/
+    @media(width < $breakpoint) {
+        &__group {
+            position: absolute;
+            display: none;
+            flex-direction: column;
+            background: hsl(var(--clr-main));
+            right: 0;
+            top: 100%;
+            padding: 1em 2em 1em 1em;
+            box-shadow: 3px 3px 3px 0px hsl(var(--clr-dark) / .2);
+        }
+
+        &__links {
+            border-left: 3px solid hsl(var(--clr-dark) / .2);
+            
+            &:is(:hover, :focus) {
+                transform: translateX(1em);
+            }
+        }
+
+        #menu-btn:checked ~ .nav__group {
+            display: flex;
+        }
+
+        &__hamburger {
+            display: block;
+        }
+        
+    }
+}
+
+/*=============
+ Footer Styling
+=============*/
+footer {
+    background: hsl(var(--clr-dark));
+    color: hsl(var(--clr-light));
+    text-align: center;
+    padding: .5em 1em;
+    
+    a {
+        color: hsl(var(--clr-main));
+        transition: opacity $transitionSpeed ease;
+    }
+
+    .socials {
+        display: flex;
+        gap: 1em;
+        justify-content: center;
+        padding: .25em;
+        font-size: 2rem;
+    }
+
+    /*--Hover Styling--*/
+    &:has(:hover, :focus) a:not(:hover, :focus) {
+        opacity: .7;
+    }
+}
+
+
+/*=================
+ HAY-K LOGO STYLING
+ =================*/
+ @keyframes cursor-blink {
+     0% {opacity: 1;}
+     49% {opacity: 1;}
+     50% {opacity: 0;}
+     100% {opacity: 0;}
+ }
+#logo-text{fill:hsl(var(--clr-light))}
+#logo-cursor{fill:hsl(var(--clr-light));opacity:0;}
+#logo-viewbox:hover #logo-cursor,
+nav > li > a:focus #logo-cursor {
+    animation: cursor-blink 1s linear 0s infinite;
+}
+
+/*===========
+ Pre Loader
+===========*/
+@keyframes loaderBounce {
+    50% {
+        transform: translateY(-2rem);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+.loader {
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    background: hsl(var(--clr-main));
+
+    &__ball {
+        width: 50px;
+        aspect-ratio: 1;
+        background-color: hsl(var(--clr-light));
+        border-radius: 100vmax;
+
+        &1 {
+            animation: loaderBounce 1s ease-in 0s infinite;
+        }
+        &2 {
+            animation: loaderBounce 1s ease-in .33s infinite;
+        }
+        &3 {
+            animation: loaderBounce 1s ease-in .66s infinite;
+        }
+    }
+}
+
+/*==================
+ Day Section Styling
+==================*/
+.day {
+    background: hsl(var(--clr-main) / .3);
+    margin-bottom: 1em;
+    padding: 1em;
+
+    &__title {
+        text-align: center;
+        padding: .5em 1em;
+        font-size: 2.5rem;
+        font-family: 'Bakbak One';
+        letter-spacing: .075em;
+    }
+}
+
+.exercise {
+    max-width: 60ch;
+    margin: 1em auto;
+    background: hsl(var(--clr-section-color) / .65);
+    color: hsl(var(--clr-text));
+    line-height: 1.5em;
+    padding: 1em;
+
+    box-shadow: 0 0 0 100vmax hsl(var(--clr-section-color) / .65);
+    clip-path: inset(0 -100vmax);
+
+    h3 {
+        font-size: 1.4rem;
+        line-height: 2.5rem;
+    }
+
+    label {
+        cursor: pointer;
+    }
+
+    input[type="checkbox"] {
+        width: 1rem;
+        aspect-ratio: 1/1;
+        margin-right: 1rem;
+        accent-color: hsl(var(--clr-main));
+        
+    }
+}
